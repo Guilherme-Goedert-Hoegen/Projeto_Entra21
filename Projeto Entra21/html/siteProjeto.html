@@ -7,21 +7,27 @@
     <title>VGBlu</title>
     <link rel="stylesheet" href="css/siteProjeto.css">
     <script src="Script/Script_Log.js"></script>
-    <link rel="stylesheet" href="css/telaLogin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
 </head>
 <body>
     <header class="max">
         
         <a href="siteProjeto.html"><img src="img/VGblu1.png" class="logo"></a>
         <nav>
-        <ul>
-            <li><a onclick="document.getElementById('login').style.display='block'" style="width:auto;">login</a></li>
-            <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Registro</a></li>
+        <ul class="headNomes">
+            <li><a onclick="document.getElementById('Perfil').style.display='block'">Mostra</a></li>
+            <li class="btn login"><a onclick="document.getElementById('login').style.display='block'" style="width:auto;" class="log">Login</a></li>
+            <li class="btn registro"><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="reg">Registro</a></li>
             <li><a href="#home">Home</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#sobreNos">Sobre nós</a></li>
             <li><a href="#contatos">Contatos</a></li>
-            <li><a href="perfilSite.html" id="perfil">Perfil</a></li>
+            <li><a href="perfilSite.html" class="TirarPerfil" id="Perfil">Perfil</a></li>
         </ul>
     </nav>
     </header>
@@ -93,6 +99,7 @@
       </div>
     </div>
   </div>
+  
 
   <div id="id01" class="modal">
     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fechar">&times;</span>
@@ -119,8 +126,20 @@
         <label for="passconfirmation">Confirmação de senha</label>
         <input type="password" name="passconfirmation" id="passwordconfirmation" placeholder="Digite novamente sua senha" data-equal="password">
       </div>
+      <div class="half-box spacing">
+        <label for="modeloVeiculo">Modelo do veículo</label>
+        <input type="text" name="modeloVeiculo" id="modeloVeiculo" placeholder="Digite o modelo veículo">
+      </div>
+      <div class="half-box">
+        <label for="placaDoVeiculo">Placa do veículo</label>
+        <input type="text" name="placaDoVeiculo" id="placaDoVeiculo" placeholder="Digite a placa do veículo">
+      </div>
+      <div class="half-box spacing">
+        <label for="anoDoVeiculo">Ano do veículo</label>
+        <input type="number" name="anoDoVeiculo" id="anoDoVeiculo" placeholder="Digite o ano do veículo"><br>
+      </div>
       <div>
-        <input type="checkbox" name="agreement" id="agreement">
+        <input type="checkbox" name="agreement" id="agreement" class="termos">
         <label for="agreement" id="agreement-label">Eu li e aceito os <a href="">termos de uso</a></label>
       </div>
       <div class="full-box">
@@ -129,41 +148,80 @@
     </form>
   </div>
   </div>
-
-  <div id="login" class="modal">
-    <span onclick="document.getElementById('login').style.display='none'" class="close" title="Fechar">&times;</span>
-    <div id="main-container">
-      <h1>Login</h1>
-      <form id="register-form">
-          <div class="full-box">
-              <label for="email spacing">E-mail</label>
-              <input type="email" name="email" id="email" placeholder="Digite o seu e-mail" data-min-length="3">
-          </div>
-          <div class="full-box">
-              <label for="password spacing">Senha</label>
-              <input type="password" name="password" id="password" placeholder="Digite a sua senha">
-          </div>
-          <div class="full-box">
-              <label>Ainda não possui uma <a  onclick="document.getElementById('id01').style.display='block',document.getElementById('login').style.display='none'"    style="width:auto;">conta</a></label>
-          </div>
-          <br>
-          <div class="full-box">
-              <label>Continuar sem <a onclick="document.getElementById('login').style.display='none'" class=".close">conta</a></label>
-          </div>
-          <br>
-          <div class="full-box">
-              <input type="submit" id="btn-submit" value="Login">
-          </div>
-      </form>
-    </div>
-    </div>
+  <!--Login-->
+<div id="login" class="modal">
+  <span onclick="document.getElementById('login').style.display='none'" class="close" title="Fechar">&times;</span>
+  <div id="main-container">
+    <h1>Login</h1>
+    <form id="register-form">
+        <div class="full-box">
+            <label for="email spacing">E-mail</label>
+            <div class="input-icons">
+              <i class="fa fa-user icon"></i>
+            <input class="input-field" type="email" name="email" id="email" placeholder="     Digite o seu e-mail" data-min-length="3">
+        </div>
+        <div class="full-box">
+            <label for="password spacing">Senha</label>
+            <div class="input-icons">
+              <i class="fa fa-user fa-lock"></i>
+            <input class="input-field" type="password" name="password" id="password" placeholder="     Digite a sua senha">
+        </div>
+        <div class="full-box">
+            <label>Ainda não possui uma <a  onclick="document.getElementById('id01').style.display='block',document.getElementById('login').style.display='none'"    style="width:auto;">conta</a></label>
+        </div>
+        <br>
+        <div class="full-box">
+            <label>Continuar sem <a onclick="document.getElementById('login').style.display='none'" class=".close">conta</a></label>
+        </div>
+        <br>
+        <div class="full-box">
+            <input type="submit" id="btn-submit" value="Login">
+        </div>
+    </form>
+  </div>
+  </div>
+  </div>
+  </div>
+  
 
     
 </body>
 <main>
-    <section id="home">Home</section>
+    <section id="home" class="home">Home</section>
     <section id="projetos">Projetos</section>
-    <section id="sobreNos">Sobre Nós</section>
-    <section id="contatos">Contatos</section>
+    <section id="sobreNos" class="sobrenos"><p>
+            A VGblu e um site onde você pode procurar vagas para estacionar seu veículo em Blumenau e região.começando agora no mercado promete fazer você não gastar muito do seu tempo procurando 
+      vagas para deixar seu veículo,é apenas entrar o site selecionar a vaga e levar seu veículo ao local desejado.
+    </p></section>
+    <section id="contatos" class="contatosdeg"><h2>Contatos</h2><br><br>
+      <div class="wrapper">
+        <div class="button">
+           <div class="icons">
+              <i class="fab fa-facebook-f"></i>
+           </div>
+           <span>Facebook</span>
+        </div>
+        <div class="button">
+           <div class="icons">
+              <i class="fab fa-twitter"></i>
+           </div>
+           <span>Twitter</span>
+        </div>
+        <div class="button">
+           <div class="icons">
+              <i class="fab fa-instagram"></i>
+           </div>
+           <span>Instagram</span>
+        </div>
+          <div class="button">
+            <div class="icons">
+               <i class="fa fa-envelope"></i>
+            </div>
+            <span>E-mail</span>
+            </div>
+            
+            
+            
+    </section>
 </main>
 </html>
