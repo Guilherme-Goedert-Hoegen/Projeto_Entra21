@@ -7,20 +7,18 @@
     <title>Perfil</title>
     <link rel="stylesheet" href="css/perfilProjeto.css">
 </head>
-<body>
-    
-        
+<body>     
         <img src="img/foto_perfil.jpg">
         <h1>Perfil</h1>
-        <form action="" method="GET" class="idade">
+        <form id="fundoperfil"action="" method="GET" class="idade">
             <table>
               <tr>
                 <td><label for="nmPessoa"><strong>Nome:</strong></label></td>
-                <td><input type="text" id="nmPessoa" name="nmPessoa" size="40" maxlength="20"></td>
+                <td><input type="text" id="nmPessoa" name="nmPessoa" size="30" maxlength="20"></td>
               </tr>  
             <tr>
                 <td><label for="sbPessoa"><strong>Sobrenome:</strong></label></td>
-                <td><input type="text" nm="sbPessoa" size="40" maxlength="20" class="sbPessoa"> </td>
+                <td><input type="text" nm="sbPessoa" size="30" maxlength="20" class="sbPessoa"> </td>
             </tr>
             <tr>
                 <td><label for="idade"><strong>Idade:</strong></label></td>
@@ -40,7 +38,7 @@
             
             <tr>
                 <td><label for="eMail"><strong>E-mail:</strong></label></td>
-                <td><input type="email" name="eEMail" size="40"></td>
+                <td><input type="email" name="eEMail" size="30"></td>
             </tr>
             <tr>
                 <td><label for="CPF"><strong>CPF:</strong></label></td>
@@ -56,13 +54,17 @@
                 <td><input type="text" name="placa" size="20"></td>
             </tr>
             <tr>
+                <td><label for="cor"><strong>Cor do veículo:</strong></label></td>
+                <td><input type="text" name="cor" size="20"></td>
+            </tr>
+            <tr>
                 <td><label for="qrCode"><strong>QRcode:</strong></label></td>
             </tr>
             
         </table>    
         </form>
-        <a href="siteProjeto.html"><button class="voltar">Voltar</button></a>
-        <a href="editarPerfil.html"><button class="editarPerfil">Editar Perfil</button></a>
+        <a href="siteProjeto.html"><button class="button">Voltar</button></a>
+        <a href="editarPerfil.html"><button class="button">Editar Perfil</button></a>
         
 
 
