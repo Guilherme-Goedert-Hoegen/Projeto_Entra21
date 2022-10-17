@@ -16,18 +16,17 @@
 </head>
 <body>
     <header class="max">
-        
         <a href="siteProjeto.html"><img src="img/VGblu1.png" class="logo"></a>
         <nav>
         <ul class="headNomes">
             
             <li class="btn login"><a onclick="document.getElementById('login').style.display='block'" style="width:auto;" class="log">Login</a></li>
             <li class="btn registro"><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="reg">Registro</a></li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#sobreNos">Sobre nós</a></li>
-            <li><a href="#contatos">Contatos</a></li>
-            <li><a href="perfilSite.html" class="TirarPerfil" id="Perfil">Perfil</a></li>
+            <li><a href="#home" class="homeh">Home</a></li>
+            <li><a href="#projetos" class="homeh">Projetos</a></li>
+            <li><a href="#sobreNos" class="homeh">Sobre nós</a></li>
+            <li><a href="#contatos" class="homeh">Contatos</a></li>
+            <li><a href="perfilSite.html" class="TirarPerfil homeh" id="Perfil">Perfil</a></li>
             <li><div class="search-box">
               <input class="search-txt" type="text" name="" placeholder="Nome do proprietário">
             <a class="search-btn" href="#">
@@ -166,13 +165,13 @@
             <label for="email spacing">E-mail</label>
             <div class="input-icons">
               <i class="fa fa-user icon"></i>
-            <input class="input-field" type="email" name="email" id="email" placeholder="     Digite o seu e-mail" data-min-length="3">
+            <input autofocus="true" class="input-field" type="email" name="email" id="email" placeholder="Digite o seu e-mail" data-min-length="3">
         </div>
         <div class="full-box">
             <label for="password spacing">Senha</label>
             <div class="input-icons">
               <i class="fa fa-user fa-lock"></i>
-            <input class="input-field" type="password" name="password" id="password" placeholder="     Digite a sua senha">
+            <input class="input-field" type="password" name="password" id="password" placeholder="Digite a sua senha">
         </div>
         <div class="full-box">
             <label>Ainda não possui uma <a  onclick="document.getElementById('id01').style.display='block',document.getElementById('login').style.display='none'"    style="width:auto;">conta</a></label>
@@ -195,14 +194,31 @@
     
 
 <main>
-    <section id="home" class="home"><p class="textoHome">Em busca de uma melhor <span style="color: blue; font-size: 54px; text-align: left;" ><br>área azul</span> no Brasil!</p></section>
+  
+    <section id="home" class="home">
+      <div class="inicial">
+        <img src="img/AreaAzul Imagem.png" class="areaAzul">
+      <p class="textoHome">Em busca de uma melhor <span style="color: rgb(0, 162, 255); font-size: 54px; text-align: left;" ><br>área azul</span> no Brasil!</p>
+    </div>
+    </section>
+
     
     <section id="projetos" class="projetos">Projetos</section>
-    <section id="sobreNos" class="sobrenos"><p class="textosob">
-            A VGblu e um site onde você pode procurar vagas para estacionar seu veículo em Blumenau e região.começando agora no mercado promete fazer você não gastar muito do seu tempo procurando 
-      vagas para deixar seu veículo,é apenas entrar o site selecionar a vaga e levar seu veículo ao local desejado.
-    </p></section>
-    <section id="contatos" class="contatosdeg"><h2>Contatos</h2><br><br>
+    <section id="sobreNos" class="sobrenos">
+      <div>
+      <h2 class="sobresub">Sobre nós</h2>
+      
+      <div >
+      <img src="img/VGblu1_2.png" class="sobreimg" >
+      
+      <p class="textosob">A VGblu é um sistemas onde você se registra para ter acesso as áreas azuis de Blumenau. Estacionar seu veículo em Blumenau ficou mais fácil, 
+        com apenas um clique em seu celular você podera usar a área azul sem cobrança.  
+        Começando agora no mercado prometemos fazer você não gastar muito do seu tempo 
+        para estacionar o seu veículo pelas ruas de Blumenau, apenas entrar no site se registrar e desfrutar.</p>
+      </div>
+      
+    </section>
+    <section id="contatos" class="contatosdeg"><h2 class="contatosttl">Contatos</h2><br><br>
       <div class="wrapper">
         <div class="button">
            <div class="icons">

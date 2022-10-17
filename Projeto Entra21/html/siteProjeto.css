@@ -26,14 +26,26 @@ body{
 .max {
     height: 100px;
 }
-.max a:hover {
-  border-bottom: 2px solid blue;
+
+.homeh {
+  text-decoration: none;
+  
 
 }
-.max a:active {
-  border-bottom: 2px solid blue;
-  
+
+.homeh::after{
+  width: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  background: blue;
+  transition: width .3s;
 }
+.homeh:hover::after {
+  width: 100%;
+}
+
+
 header{
     height: 10vh;
     display: flex;
@@ -200,7 +212,7 @@ img{
     font: 2rem;
   }
   section.home{
-   background-image: linear-gradient(to right,#79b8df, white);
+   background-image: linear-gradient(to bottom,#79b8df, white);
    height: 30%;
    
    
@@ -208,6 +220,13 @@ img{
   }
   section.contatosdeg{
     background-image: linear-gradient(to top, #79b8df, white);
+  }
+  .contatosttl{
+    font-size: 45px;
+  text-align: center;
+  text-shadow: 2px 2px gray;
+  margin-top: -10%;
+  
   }
   
   
@@ -227,6 +246,7 @@ img{
     display: block;
     outline: none;
     width: 100%;
+    
   }
   
   a {
@@ -266,6 +286,7 @@ img{
   .full-box {
     flex: 1 1 100%;
     position: relative;
+    
   }
   
   .half-box {
@@ -331,10 +352,7 @@ img{
   background-color: rgb(86, 139, 255);
   font-weight: bold;
  }
-.sobrenos{
-  font-size: x-large;
-  margin-right: 800px;
-  }
+
 span{
   margin-right: auto;
   margin-left: 30px;
@@ -360,6 +378,7 @@ html,body{
   cursor: pointer;
   box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
   transition: all 0.3s ease-out;
+  
 }
 .wrapper .button:hover{
   width: 200px;
@@ -373,6 +392,7 @@ html,body{
   box-sizing: border-box;
   line-height: 60px;
   transition: all 0.3s ease-out;
+  
 }
 .wrapper .button:nth-child(1):hover .icons{
   background: #4267B2;
@@ -431,7 +451,9 @@ html,body{
   width: 100%;
   padding: 10px;
   text-align: justify;
-  margin-right: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  
 }
 .fa-lock {
   padding: 10px;
@@ -445,6 +467,7 @@ html,body{
   text-align: left;
   text-shadow: 3px 3px gray;
   font-size: 54px;
+  margin-top: -10%;
 }
 .search-box {
   position: absolute;
@@ -491,7 +514,59 @@ html,body{
 .textosob{
   text-align: left;
   margin-left: 50%;
+  margin-bottom: 300px;
+  
 }
+.areaAzul {
+  width: 700px;
+  margin-top: -10%;
+  
+}
+.sobrenos{
+  font-size: x-large;
+  text-align: right;
+ 
+  
+  
+}
+.sobresub{
+  font-size: 45px;
+  text-align: center;
+  text-shadow: 3px 3px gray;
+  margin-top: 400px;
+
+  
+}
+
+.sobreimg{
+  width: 500px;
+  margin-left: 10%;
+  
+
+}
+.textosob{
+  margin-left: 50%;
+  text-align: left;
+  margin-top: -15%;
+  
+}
+
+
+
+.sobreimg,.textosub{
+  display: flex; 
+  margin-top: 7%;
+  
+ 
+  
+}
+section.sobrenos {
+   background-image: linear-gradient(to bottom, #79b8df, white);
+}
+.projetos {
+  background-image: linear-gradient(to top, #79b8df, white);
+}
+
 
 
 
